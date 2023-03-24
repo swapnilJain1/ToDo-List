@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dark{
+  background-color: rgba(15, 14, 14, 0.811);
+}
+.light{
+  background-color: rgba(171, 173, 177, 0.909);
+}
+button{
+  cursor: pointer;
+}
+button:hover{
+  transform: scale(1.1);
+}
