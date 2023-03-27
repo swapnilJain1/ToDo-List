@@ -5,12 +5,11 @@ function ShowTask({allTask,setAllTask,task, setTask}) {
   const handleDelete = (id) =>{
     setAllTask(oldTask => oldTask.filter(task => task.id!==id))
   }
-  const handleEdit = (id) =>{
-    const selectedTask = allTask.find(task => task.id===id)
-    setTask(selectedTask.name)
-    console.log(task)
-    console.log(selectedTask)
-  }
+  // const handleEdit = (id) =>{
+  //   const selectedTask = allTask.find(task => task.id===id)
+  //   setTask(selectedTask.name)
+    
+  // }
 
   return (
     <section className='showTask'>
@@ -28,7 +27,7 @@ function ShowTask({allTask,setAllTask,task, setTask}) {
           {allTask && allTask.map(task => (
             <li key={task.id} >
               <p>{task.name}</p>
-              <span className='edit-del' onClick={()=>handleEdit(task.id)}>📝</span>
+              {/* <span className='edit-del' onClick={()=>handleEdit(task.id)}>📝</span> */}
               <span className='edit-del'
                     onClick={()=>handleDelete(task.id)}
               >❌</span>

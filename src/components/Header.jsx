@@ -6,7 +6,7 @@ function Header() {
     document.documentElement.removeAttribute("class")
 
     document.documentElement.classList.add(theme?"dark":"light")
-    console.log(theme)
+    
   },[theme])
   return (
     <header>
